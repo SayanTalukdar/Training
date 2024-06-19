@@ -1,0 +1,33 @@
+Bounded Contexts and Services
+1.Product Service
+	Endpoints:
+    -- POST /products: Add a new product
+    -- DELETE /products/{id}: Remove a product
+    -- GET /products: List all products
+    -- GET /products/{id}: Get product details by ID
+
+2.Product Detail Service
+	Endpoints:
+    -- POST /product-details: Add product details
+    -- DELETE /product-details/{id}: Remove product details
+    -- GET /product-details/{productId}: Get details for a specific product
+
+3.Price Service
+	Endpoints:
+    -- POST /prices: Add pricing information
+    -- DELETE /prices/{id}: Remove pricing information
+    -- GET /prices/{productId}: Get pricing for a specific product
+
+4.Cart Service
+	Endpoints:
+    -- POST /cart/{userId}/items: Add item to cart
+    -- DELETE /cart/{userId}/items/{itemId}: Remove item from cart
+    -- GET /cart/{userId}: Get cart items for a user
+    -- POST /cart/{userId}/checkout: Checkout
+
+5.User Service
+	Endpoints:
+    -- POST /users: Register a new user
+    -- GET /users/{id}: Get user details
+    -- POST /login: User login
+
