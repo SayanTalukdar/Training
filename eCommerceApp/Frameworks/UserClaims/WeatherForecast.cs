@@ -1,6 +1,6 @@
 using System;
 
-namespace eCommAppProdDetail
+namespace UserClaims
 {
     public class WeatherForecast
     {

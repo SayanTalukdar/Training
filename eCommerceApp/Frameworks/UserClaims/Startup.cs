@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace eCommAppProdDetail
+namespace UserClaims
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace eCommAppProdDetail
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "eCommAppProdDetail", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "UserClaims", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace eCommAppProdDetail
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "eCommAppProdDetail v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UserClaims v1"));
             }
 
             app.UseHttpsRedirection();

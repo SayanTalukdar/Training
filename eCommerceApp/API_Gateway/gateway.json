@@ -1,0 +1,57 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "GetUser",
+      "DownStreamScheme": "http",
+      "DownStreamHostAndPosrts": [
+        {
+          "Host": "localhost",
+          "Port": 60818
+        }
+      ],
+      "UpStreamPathTemplate": "",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/GetProduct",
+      "DownStreamScheme": "http",
+      "DownStreamHostAndPosrts": [
+        {
+          "Host": "localhost",
+          "Port": 40708
+        }
+      ],
+      "UpStreamPathTemplate": "",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/GetPrice",
+      "DownStreamScheme": "http",
+      "DownStreamHostAndPosrts": [
+        {
+          "Host": "localhost",
+          "Port": 29888
+        }
+      ],
+      "UpStreamPathTemplate": "",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/GetCart",
+      "DownStreamScheme": "http",
+      "DownStreamHostAndPosrts": [
+        {
+          "Host": "localhost",
+          "Port": 54311
+        }
+      ],
+      "UpStreamPathTemplate": "",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+
+
+  ]
+}
